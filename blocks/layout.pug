@@ -1,0 +1,16 @@
+include _assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+
+doctype html
+html(lang='en')
+	head
+		include head/head
+	body
+		block navigation
+			each link, title in nav.navPages
+				li: a(href= link)= title
+		block content
+		block footer
+			include footer/footer
+			

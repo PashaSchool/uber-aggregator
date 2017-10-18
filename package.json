@@ -1,0 +1,36 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "g": "gulp"
+  },
+  "config": {
+    "src": {
+      "sass": "blocks/",
+      "html": "blocks/"
+    },
+    "build": {
+      "css": "app/css/",
+      "html": "app/"
+    }
+  },
+  "author": "Paha School",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "postcss-reporter": "^5.0.0",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.0"
+  }
+}

@@ -1,0 +1,58 @@
+.after-intro {
+	padding: $openMenuWidth $openMenuWidth 100px $openMenuWidth;
+	position: relative;
+	height: 100%;
+	margin-bottom: 300px;
+	&:after {
+		content: "UBER";
+		display: block;
+		font-weight: bold;
+		font-size: responsive 76px 256px;
+		font-range: 420px 1280px;
+
+		position: absolute;
+		bottom: 0;
+		color: $grey;
+		z-index: -1100;
+		left: 220px;
+		bottom: -250px;
+		opacity: .3
+	}
+	
+}
+
+.description-conteiner {
+	width: 50%;
+	position: relative;
+
+	&__title {
+		color: $grey;
+		padding: 5px;
+		position: relative;
+		&:after {
+			content: "";
+			margin: 10px 0;
+			width: 50px;
+			height: 3px;
+			display: block;
+			background-color: $red;
+		}
+	}
+
+	&__description {
+		padding: 5px;
+		color: $black;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+	}
+
+	&__additional_description {
+		margin-top: 80px;
+		border-top: 1px solid rgba($black, .3);
+	}
+}
+
+
+.join-form-container {
+	width: 50%;
+}

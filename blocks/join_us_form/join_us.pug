@@ -1,0 +1,24 @@
++b.DIV.join-us-container
+	+e.H2.title
+		| Приєднайся вже сьогодні до нашої команди
+	+b.FORM.join-us-form
+		each title, fieldName in field.inputFields
+			.input-field
+				input(type="text", id= fieldName)
+				label(for= fieldName)= title
+
+		.input-field
+			input(type="text")
+			label phone number
+
+		.input-field
+			select
+				option(value, disabled, selected) Вибери свою область
+				each city, fieldValue in field.city
+					option(value= fieldValue)= city 
+			label Область
+		+e.DIV.button-container
+			button(class="waves-effect waves-light btn pink darken-1")
+				| Підтвердити
+
+	

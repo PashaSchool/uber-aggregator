@@ -1,0 +1,49 @@
+.join-us-container {
+	background-color: white;
+	border: 1px solid $darkWhite;
+	border-radius: 3px;
+	box-shadow: 0px 2px 50px rgba($black, .7);
+	width: 400px;
+	position: absolute;
+	bottom: -90px;
+	right: 100px;
+	&__title {
+		padding: 20px 20px 10px;
+		text-align: center;
+		font-size: responsive 16px 26px;
+		font-range: 420px 1280px;
+		font-weight: bolder;
+		color: $grey;
+	}
+}
+.join-us-form {
+	width: 100%;
+	padding: 10px 20px;
+
+	&__button-container {
+		display: flex;
+		justify-content: center;
+		padding: 10px 0;
+	}
+}
+
+
+.input-field input[type="text"]:focus + label {
+	color: $blue !important;
+}
+.input-field input[type="text"]:focus {
+	border-bottom: 1px solid $blue !important;
+	box-shadow: 0 1px 0 0 $blue !important;
+}
+.input-field input[type="text"]:focus {
+	border-bottom: 1px solid $blue !important;
+	box-shadow: 0 1px 0 0 $blue !important;
+}
+.input-field input[type="text"].valid {
+	border-bottom: 1px solid $blue;
+	box-shadow: 0 1px 0 0 $blue;
+}
+.input-field input[type="text"].invalid {
+	border-bottom: 1px solid $blue;
+	box-shadow: 0 1px 0 0 $blue;
+}

@@ -1,3 +1,10 @@
+//color theme
+$blue: #2196F3;
+$black: #212121;
+$grey: #9E9E9E;
+$white: #EEEEEE;
+$darkWhite: #E0E0E0;
+
 //default colors
 $defaultBlack: #000;
 
@@ -8,3 +15,4 @@ $breakpoints: (
   'large'  : ( min-width: 1200px )
 );
 //navigation
+$openMenuWidth: 80px;

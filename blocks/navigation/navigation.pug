@@ -1,8 +1,8 @@
-+b.HEADER.menu
-	+b.NAV.menu-left 
++b.HEADER.menu_slide
+	+b.DIV.menu-left 
 		+b.UL.navigation-box
 			each link, title in nav.navPages
 				+e.LI.pill: a(href= link)
 					| #{title}
 	+b.DIV.menu-right
-		span burger menu
+		+e.SPAN.stick-arrow

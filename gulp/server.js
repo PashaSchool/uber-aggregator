@@ -9,7 +9,9 @@ gulp.task('server', function() {
 		},
 		files: [
 			cnfg.build.html + "*.html",
-			cnfg.build.css + "*.css"
+			cnfg.build.css + "*.css",
+			cnfg.build.js + "*.js"
+
 		]
 	})
 })

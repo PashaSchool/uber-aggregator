@@ -1,9 +1,11 @@
 +b.HEADER.menu_slide
-	+b.DIV.menu-left 
-		+b.UL.navigation-box
-			each link, title in nav.navPages
-				+e.LI.pill: a(href= link)
-					| #{title}
-	+b.DIV.menu-right
-		+b.burger-wrapper
-			+e.SPAN.stick-arrow
+	+b.DIV.overlay
+	+b.menu-wrapper
+		+b.DIV.menu-left 
+			+b.UL.navigation-box
+				each link, title in nav.navPages
+					+e.LI.pill: a(href= link)
+						| #{title}
+		+b.DIV.menu-right
+			+b.burger-wrapper
+				+e.SPAN.stick-arrow

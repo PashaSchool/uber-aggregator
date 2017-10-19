@@ -10,7 +10,7 @@
     "src": {
       "sass": "blocks/",
       "html": "blocks/",
-      "js" : "blocks/"
+      "js": "blocks/"
     },
     "build": {
       "css": "app/css/",
@@ -22,9 +22,13 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.0.0",
     "gulp-postcss": "^7.0.0",
@@ -36,5 +40,6 @@
     "require-dir": "^0.3.2",
     "rucksack-css": "^1.0.2",
     "run-sequence": "^2.2.0"
-  }
+  },
+  "dependencies": {}
 }

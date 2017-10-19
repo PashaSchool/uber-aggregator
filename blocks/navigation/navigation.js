@@ -1,5 +1,5 @@
 $(function() {
-	$('.menu-right').click(function() {
-		$('.menu-right__stick-arrow').toggleClass('trigger')
+	$('.burger-wrapper').click(function() {
+		$('.burger-wrapper__stick-arrow').toggleClass('trigger')
 	})
 })

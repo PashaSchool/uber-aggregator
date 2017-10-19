@@ -9,11 +9,13 @@
   "config": {
     "src": {
       "sass": "blocks/",
-      "html": "blocks/"
+      "html": "blocks/",
+      "js" : "blocks/"
     },
     "build": {
       "css": "app/css/",
-      "html": "app/"
+      "html": "app/",
+      "js": "app/js/"
     }
   },
   "author": "Paha School",
@@ -23,6 +25,7 @@
     "browser-sync": "^2.18.13",
     "cssnano": "^3.10.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-notify": "^3.0.0",
     "gulp-postcss": "^7.0.0",
     "gulp-pug": "^3.3.0",

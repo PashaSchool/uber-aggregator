@@ -35,9 +35,8 @@
 	position: relative;
 	display: block;
 	padding-top: 30px;
-
-	
 }
+
 .burger-wrapper {
 	display: flex;
 	position: relative;
@@ -53,10 +52,11 @@
 		width: 40px;
 		height: 4px;
 		display: block;
-		background-color: $black;
+		background-color: $darkWhite;
 		position: absolute;
 		transition: all .3s linear;
 		transform-origin: 50% 50%;
+		box-shadow: 1px 0 3px rgba($black, .4);
 	}
 	
 	&__stick-arrow:before {

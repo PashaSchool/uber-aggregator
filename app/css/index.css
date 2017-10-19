@@ -59,10 +59,11 @@ html, body {
     width: 40px;
     height: 4px;
     display: block;
-    background-color: #212121;
+    background-color: #E0E0E0;
     position: absolute;
     transition: all .3s linear;
-    transform-origin: 50% 50%; }
+    transform-origin: 50% 50%;
+    box-shadow: 1px 0 3px rgba(33, 33, 33, 0.4); }
   .burger-wrapper__stick-arrow:before {
     content: '';
     top: -13px;
@@ -109,3 +110,35 @@ html, body {
       background-color: #E0E0E0; }
   .navigation-box__pill:last-child a {
     border-bottom: none; }
+
+.homepage-hero-module {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.overlay-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center; }
+  .overlay-video:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33, 0.8); }
+  .overlay-video video {
+    min-height: 100%;
+    min-width: 100%; }
+
+.arrow_down {
+  width: 100%;
+  height: 100%;
+  z-index: 10; }

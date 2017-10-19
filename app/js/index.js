@@ -1,8 +1,10 @@
 'use strict';
 
 $(function () {
-    Navigation.setWidth();
-    $('.burger-wrapper').on('click', Navigation.slideMenu);
+  var $window = $(window);
+
+  Navigation.setWidth();
+  $('.burger-wrapper').on('click', Navigation.slideMenu);
 });
 'use strict';
 

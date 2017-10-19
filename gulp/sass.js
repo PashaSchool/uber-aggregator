@@ -19,7 +19,11 @@ gulp.task('sass', function() {
 })
 
 gulp.task('sass:watch', function () {
-  gulp.watch([cnfg.src.sass + '*.scss', cnfg.src.sass + '**/*.scss'], function() {
+  gulp.watch([
+  	cnfg.src.sass + '*.scss',
+  	cnfg.src.sass + '**/*.scss',
+  	cnfg.src.sass + '**/**/*.scss'
+  	], function() {
   	return sequence('sass','postCss')
   });
 });

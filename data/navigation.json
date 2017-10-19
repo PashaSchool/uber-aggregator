@@ -1,6 +1,8 @@
 {
 	"navPages" : {
 		"Home" : "index.html",
-		"About" : "about.html"
+		"About" : "about.html",
+		"Vacantion" : "vacansion.html",
+		"Contact us" : "about.html"
 	}
 }

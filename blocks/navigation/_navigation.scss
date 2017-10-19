@@ -1,0 +1,52 @@
+.menu {
+	display: flex;
+	// position: fixed;
+	background-color: blueviolet;
+	height: 100vh;
+}
+
+
+.menu-right {
+	// @include breakpoint('large') {
+	// 	background-color: black;
+	// }
+	width: 80px;
+	background-color: red;
+}
+
+.menu-left {
+	width: 90%;
+	background-color: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@include breakpoint('mobile') {
+		max-width: 480px;
+	}
+	@include breakpoint('large') {
+		max-width: 580px;
+	}
+
+}
+
+.navigation-box {
+	width: calc(100% - 80px);
+	display: flex;
+	flex-direction: column;
+	background-color: green;
+	padding: 1rem;
+	&__pill {
+		margin: 10px 0;
+
+		a {
+			font-size: responsive 16px 21px;
+			font-range: 420px 1280px;
+			font-weight: bolder;
+			background-color: yellow;
+			padding: 10px 5px;
+			display: block;
+			text-align: center;
+		}
+	}
+}

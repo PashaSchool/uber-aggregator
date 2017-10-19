@@ -7,10 +7,11 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const sourcemaps   = require('gulp-sourcemaps');
+const rucksack = require('rucksack-css');
 
 
 gulp.task('postCss', function() {
-	var props = [autoprefixer(), cssnano];
+	var props = [autoprefixer(), cssnano, rucksack()];
 	return gulp.src(cfg.build.css + "index.css")
 	.pipe(postcss(props))
 	.on('error', function(err) {

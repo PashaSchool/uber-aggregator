@@ -1,2 +1,53 @@
-h2 {
-  background-color: #fff; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html, body {
+  height: 100%; }
+
+.menu {
+  display: flex;
+  background-color: blueviolet;
+  height: 100vh; }
+
+.menu-right {
+  width: 80px;
+  background-color: red; }
+
+.menu-left {
+  width: 90%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (min-width: 767px) {
+    .menu-left {
+      max-width: 480px; } }
+  @media (min-width: 1200px) {
+    .menu-left {
+      max-width: 580px; } }
+
+.navigation-box {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  padding: 1rem; }
+  .navigation-box__pill {
+    margin: 10px 0; }
+    .navigation-box__pill a {
+      font-size: responsive 16px 21px;
+      font-range: 420px 1280px;
+      font-weight: bolder;
+      background-color: yellow;
+      padding: 10px 5px;
+      display: block;
+      text-align: center; }

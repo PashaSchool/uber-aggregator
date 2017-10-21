@@ -1,11 +1,11 @@
 .join-us-container {
+	width: 400px;
 	background-color: white;
 	border: 1px solid $darkWhite;
 	border-radius: 3px;
 	box-shadow: 0px 2px 50px rgba($black, .7);
-	width: 400px;
-	position: absolute;
-	bottom: -90px;
+	// position: absolute;
+	// bottom: -90px;
 	right: 100px;
 	&__title {
 		padding: 20px 20px 10px;

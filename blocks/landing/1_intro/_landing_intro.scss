@@ -23,11 +23,11 @@
     	background-color: rgba($black, .8);
     }
 
-	video {
-		min-height:100%;
-		min-width:100%;
-		
-	}
+    video {
+      min-height:100%;
+      min-width:100%;
+
+  }
 }
 
 .arrow_down {
@@ -35,4 +35,36 @@
     height: 100%;   
     z-index: 10;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.intro {
+    width: 50%;
+    height: auto;
+    padding: 40px 100px;
+    min-width: 300px;
+    border: 1px solid rgba($darkWhite, .3);
+    &__title {
+        text-align: center;
+        color: $darkWhite;
+        letter-spacing: 10px;
+
+
+    }
+    &__description {
+        color: $darkWhite;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    button {
+        margin: 10px auto;
+        display: block;
+        color: black !important;
+    }
+}
+

@@ -1,3 +1,24 @@
 {
-	"content" : "Here is some content :D"
+	"content" : "Here is some content :D",
+	"news" : [{
+		"title": "Here is some title",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum modi dolor itaque sunt iusto error, quas maiores provident, ipsam sit consectetur dignissimos iste exercitationem cupiditate. Vel aspernatur consequuntur, sunt sint.",
+		"day" : "25",
+		"month" : "sep",
+		"year" : "2017"
+	},
+	{
+		"title": "Here is some title",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum modi dolor itaque sunt iusto error, quas maiores provident, ipsam sit consectetur dignissimos iste exercitationem cupiditate. Vel aspernatur consequuntur, sunt sint.",
+		"day" : "13",
+		"month" : "sep",
+		"year" : "2017"
+	},
+	{
+		"title": "Here is some title",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum modi dolor itaque sunt iusto error, quas maiores provident, ipsam sit consectetur dignissimos iste exercitationem cupiditate. Vel aspernatur consequuntur, sunt sint.",
+		"day" : "06",
+		"month" : "sep",
+		"year" : "2017"
+	}]
 }

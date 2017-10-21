@@ -1,0 +1,24 @@
++b.media-wrapper
+	+b.media-container
+		+b.news-container
+			+e.header
+				+e.H2.title
+					| News
+				+e.read-more: a(href='#') read more news >
+			+b.news-box
+				+b.UL.news-list
+					each news in content.news
+						+e.LI.feed
+							+e.DIV.timestamp
+								+e.SPAN.day= news.day
+								+e.footer_time
+									+e.SPAN.month= news.month
+									+e.SPAN.year= news.year
+							+e.DIV.content
+								+e.H4.title= news.title
+								+e.P.description= news.description
+		//- +b.offers-container
+		//- 	+e.header  
+		//- 		+e.H2.title
+		//- 			| Offers
+		//- 		+e.read-more: a(href='#') read more offers

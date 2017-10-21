@@ -1,0 +1,52 @@
+
+// .social-list {
+// 	display: flex;
+// 	&__soc {
+// 		svg {
+// 			width: 50px;
+// 			height: 50px;
+// 		}
+// 	}	
+// }
+.footer {
+	width: 100%;
+	padding: 15px 80px 40px 80px ;
+	display: flex;
+	position: relative;
+	&:after {
+		content: 'CONTACT US';
+		font-size: 134px;
+		font-weight: bolder;
+		position: absolute;
+		color: rgba($grey, .3);
+		left: 0;
+		bottom: -40px;
+
+	}	
+}
+.list-stuff {
+	width: 80%;
+}
+.social-stuff {
+	width: 30%;
+
+	// &__title {
+	// 	color: $grey;
+	// 	text-align: center;
+	// 	margin-bottom: 15px;
+	// }
+	&__social-list {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__soc {
+		svg {
+			fill: $black;
+			width: 40px;
+			height: 40px;
+			margin-right: 25px;
+		}
+	}
+}

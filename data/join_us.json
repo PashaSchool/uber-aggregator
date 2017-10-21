@@ -9,5 +9,19 @@
 		"lviv" : "Львів",
 		"kiev" : "Київ",
 		"Uzgorod" : "Ужгород"
-	}
+	},
+	"benefitList" : [
+		{
+			"title" : "Lorem ipsum dolor.",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing."
+		},
+		{
+			"title" : "Lorem ipsum dolor ipsum dolor.",
+			"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing"
+		},
+		{
+			"title" : "Lorem ipsum dolor dolor.",
+			"description" : "Lorem ipsum dolor sit amet, camet, consectetur adipisicing."
+		}
+	] 
 }

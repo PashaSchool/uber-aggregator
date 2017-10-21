@@ -2,7 +2,7 @@
 	padding: $openMenuWidth $openMenuWidth 100px $openMenuWidth;
 	position: relative;
 	height: 100%;
-	margin-bottom: 300px;
+	display: flex;
 	&:after {
 		content: "UBER";
 		display: block;
@@ -11,11 +11,11 @@
 		font-range: 420px 1280px;
 
 		position: absolute;
-		bottom: 0;
+		bottom: 120px;
 		color: $grey;
 		z-index: -1100;
-		left: 220px;
-		bottom: -250px;
+		left: 180px;
+		// bottom: -250px;
 		opacity: .3
 	}
 	
@@ -29,15 +29,8 @@
 		color: $grey;
 		padding: 5px;
 		position: relative;
-		&:after {
-			content: "";
-			margin: 10px 0;
-			width: 50px;
-			height: 3px;
-			display: block;
-			background-color: $red;
-		}
 	}
+	
 
 	&__description {
 		padding: 5px;
@@ -55,4 +48,24 @@
 
 .join-form-container {
 	width: 50%;
+	padding-left: 100px;
+}
+
+h2.underscore{
+	&:after {
+			content: "";
+			margin: 10px 0;
+			width: 50px;
+			height: 3px;
+			display: block;
+			background-color: $red;
+		}
+}
+
+
+h2.underscore.left {
+	&:after {
+		content: '';
+		margin-left: auto;
+	}
 }

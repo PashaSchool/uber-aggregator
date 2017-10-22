@@ -80,13 +80,13 @@ ul.news-box {
 	}
 	&__title {
 		position: relative;
-		color: $red;
+		color: $blue;
 		&:after {
 			content: '';
 			width: 5px;
 			height: 5px;
 			border-radius: 100%;
-			background-color: $red;
+			background-color: $blue;
 			display: block;
 			position: absolute;
 			top: 17px;
@@ -111,7 +111,7 @@ ul.news-box {
 		display: block;
 		padding: 5px;
 		font-weight: bolder;
-		color: $red;
+		color: $blue;
 
 	}
 

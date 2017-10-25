@@ -1,8 +1,32 @@
 +b.FOOTER.footer
-	+b.list-stuff
+	+b.stuff-content
+		+b.stuf-logo
+			.logoImg
+			+e.DIV.description
+				+e.UL.private-date
+					+e.LI.item
+						i.material-icons.prefix contact_phone
+						p  Lorem ipsum dolor.
+					+e.LI.item
+						i.material-icons.prefix contact_mail
+						p  Lorem ipsum dolor.
+					+e.LI.item
+						i.material-icons.prefix local_offer
+						p  Lorem ipsum dolor.
+		+b.stuff-box
+			+e.H5.header.underscore Lorem ipsum dolor.
+			+e.UL.list
+				each list in content.list
+					+e.LI.item: a(href="#")= list
+		+b.stuff-box
+			+e.H5.header.underscore Lorem ipsum dolor.
+			+e.UL.list
+				each list in content.list
+					+e.LI.item: a(href="#")= list
+
 	+b.social-stuff
+		+e.container-for-label
 		+e.container-for-social
-			+e.H5.title(class='underscore')
 			+e.UL.social-list
 				+e.LI.soc
 					svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 512 512', style='enable-background:new 0 0 512 512;', xml:space='preserve')

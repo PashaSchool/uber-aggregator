@@ -20,5 +20,24 @@
 		"day" : "06",
 		"month" : "sep",
 		"year" : "2017"
-	}]
+	}],
+	"offers" : [
+		{
+			"title" : "great offers title 1",
+			"description" : "ipsum dolor sit amet, consectetur adipisicing, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
+		},
+		{
+			"title" : "great offers title 2",
+			"description" : "ipsum dolor sit amet, consectetur adipisicing laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
+		},
+		{
+			"title" : "great offers title 3",
+			"description" : "ipsum dolor sit amet, consectetur adipisicpellat, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
+		},
+		{
+			"title" : "great offers title 4",
+			"description" : "ipsum dolor sit amet, consectetur adipisit, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
+		}
+	],
+	"list": ["Lorem ipsum dolor.", "Lorem ipsum dolor.", "Lorem ipsum dolor." , "Lorem ipsum dolor.", "Lorem ipsum dolor.", "Lorem ipsum dolor."]
 }

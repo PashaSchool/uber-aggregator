@@ -55,3 +55,21 @@
 
 	+b.phone_wrapper
 		include ../../PhoneMocap/phone
++b.SECTION.offers-wrapper
+	+b.offers-content
+		+b.UL.offers-list
+			each offer in content.offers
+				+b.LI.item-box
+					+e.container
+						+e.title: h5= offer.title
+						+e.body
+							+e.icon
+								//- img(src="./", alt="img")
+								div.fantom
+							+e.description
+								+e.P.text= offer.description
+	+b.read-more
+		+e.anchor-right
+			a(href='#')
+				| read more about partners & offers >
+

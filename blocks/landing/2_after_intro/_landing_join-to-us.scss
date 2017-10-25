@@ -51,7 +51,7 @@
 	padding-left: 100px;
 }
 
-h2.underscore{
+.underscore{
 	&:after {
 			content: "";
 			margin: 10px 0;
@@ -63,7 +63,7 @@ h2.underscore{
 }
 
 
-h2.underscore.left {
+.underscore.left {
 	&:after {
 		content: '';
 		margin-left: auto;

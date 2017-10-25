@@ -1,0 +1,43 @@
+
+.feedback-form-wrapper {
+	padding: 0 80px;
+	display: flex;
+	&__form-text {
+		width: 50%;
+
+
+	}
+	&__header {
+		padding: 0 40px;
+		width: 100%;
+		color: $grey;
+	}
+	&__description{
+		padding: 0 40px;
+		color: $black;
+		font-weight: 300;
+
+	}
+	width: 100%;
+	&__container-form {
+		box-shadow: 0px 10px 40px rgba($black, .3);
+		background-color: #fff;
+		padding: 50px;
+		width: 50%;
+		button {
+			display: block;
+			float: right;
+
+		}
+		&:after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+
+		.input-field{
+			margin: 0;
+			width: 100%;
+		}
+	}
+}

@@ -17,7 +17,7 @@
 	height: 8px;
 	// border: 1px solid #000;
 	margin: 25px auto;
-	background-color: $grey;
+	background-color: rgba($grey, .5);
 
 }
 
@@ -26,13 +26,15 @@
 	margin-left: 15px;
 	width: 270px;
 	height: 430px;
-	border: 1px solid $grey;
+	// border: 1px solid $grey;
+	box-shadow: 0px 0px 5px $grey;
 }
 
 .phone-buttons {
 	width: 80px;
 	height: 80px;
-	border: 1px solid $grey;
+	// border: 1px solid $grey;
+	box-shadow: 0px 0px 5px $grey;
 	border-radius: 100%;
 	margin: 19px auto;
 	position: relative;  
@@ -44,6 +46,7 @@
 		width: 45px;
 		height: 45px;
 		display: block;	
-		border: 1px solid $grey;
+		// border: 1px solid $grey;
+		box-shadow: 0px 0px 5px $grey;
 	}
 }

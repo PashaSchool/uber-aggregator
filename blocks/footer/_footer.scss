@@ -11,30 +11,102 @@
 .footer {
 	width: 100%;
 	padding: 15px 80px 40px 80px ;
-	display: flex;
 	position: relative;
-	&:after {
-		content: 'CONTACT US';
-		font-size: 134px;
-		font-weight: bolder;
-		position: absolute;
-		color: rgba($grey, .3);
-		left: 0;
-		bottom: -40px;
+	margin-top: 100px;
+	display: flex;
+	flex-flow: column wrap;
 
+	border-top-left-radius: 50% 20%;
+	border-top-right-radius: 50% 20%;
+	// &:after {
+	// 	content: 'CONTACT US';
+	// 	font-size: 90px;
+	// 	font-weight: bolder;
+	// 	position: absolute;
+	// 	color: rgba($grey, .3);
+	// 	left: 80px;
+	// 	bottom: -40px;
+
+	// }	
+}
+.stuff-content {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 0;
+}
+
+.stuf-logo {
+	display: flex;
+	.logoImg{
+		width: 100px;
+		height: 100px;
+		background-color: $darkWhite;
+		margin-right: 10px;
+	}
+	&__description {
+		padding: 10px;
+		border-left: 1px solid rgba($grey, .6);
+	}
+	&__private-date{
+
+	}
+	&__item {
+		display: flex;
+		padding: 5px 0;
+		p {
+			color: $black;
+			font-weight: 300;
+			padding-left: 10px;
+		}
+		i {
+
+		}
+	}
+}
+
+
+.stuff-box {
+	padding: 10px;
+	&__header {
+		color: $grey;
 	}	
-}
-.list-stuff {
-	width: 80%;
-}
-.social-stuff {
-	width: 30%;
+	&__list {
+		
+	}
+	&__item {
+		padding: 5px 0px;
+		text-decoration: underline;
 
-	// &__title {
-	// 	color: $grey;
-	// 	text-align: center;
-	// 	margin-bottom: 15px;
-	// }
+	}
+}
+
+.social-stuff {
+	width: 100%;
+	padding: 80px 30px 0 30px;
+	// align-self: flex-end;
+	display: flex;
+
+	&__container-for-label {
+		width: 50%;
+		position: relative;
+
+		&:after {
+			content: "CONTACT US";
+			position: absolute;
+			display: block;
+			font-size: 90px;
+			color: $darkWhite;
+			left: 0;
+			bottom: 0;
+			font-weight: bolder;
+			line-height: 1;
+		}
+	}
+	&__container-for-social {
+		width: 50%;
+	}
 	&__social-list {
 		width: 100%;
 		display: flex;
@@ -50,3 +122,4 @@
 		}
 	}
 }
+

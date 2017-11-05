@@ -1,29 +1,33 @@
 +b.FOOTER.footer
-	+b.stuff-content
-		+b.stuf-logo
-			.logoImg
-			+e.DIV.description
-				+e.UL.private-date
-					+e.LI.item
-						i.material-icons.prefix contact_phone
-						p  Lorem ipsum dolor.
-					+e.LI.item
-						i.material-icons.prefix contact_mail
-						p  Lorem ipsum dolor.
-					+e.LI.item
-						i.material-icons.prefix local_offer
-						p  Lorem ipsum dolor.
-		+b.stuff-box
-			+e.H5.header.underscore Lorem ipsum dolor.
-			+e.UL.list
-				each list in content.list
-					+e.LI.item: a(href="#")= list
-		+b.stuff-box
-			+e.H5.header.underscore Lorem ipsum dolor.
-			+e.UL.list
-				each list in content.list
-					+e.LI.item: a(href="#")= list
+	svg.top(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+		polygon(fill='white', points='100,0 0,100 0,0')
 
+		+b.stuff-box-wrapper
+			+b.stuff-box
+				+e.H5.header.underscore Lorem ipsum dolor.
+				+e.UL.list
+					each list in content.list
+						+e.LI.item: a(href="#")= list
+			+b.stuff-box
+				+e.H5.header.underscore Lorem ipsum dolor.
+				+e.UL.list
+					each list in content.list
+						+e.LI.item: a(href="#")= list
+		+b.stuff-content
+			+b.stuf-logo
+				.logoImg
+					.img
+				+e.DIV.description
+					+e.UL.private-date
+						+e.LI.item
+							i.material-icons.prefix contact_phone
+							p  +3 ( 333 ) 999-999-99
+						+e.LI.item
+							i.material-icons.prefix contact_mail
+							p  +3 ( 333 ) 999-999-99
+						+e.LI.item
+							i.material-icons.prefix local_offer
+							p  Ukraine Lviv st. Anywhere 22
 	+b.social-stuff
 		+e.container-for-label
 		+e.container-for-social
@@ -108,6 +112,7 @@
 								c19.959-0.868,52.936,17.356,62.481,22.563c5.207,2.603,10.414,3.471,15.62,1.736c13.017-4.339,28.637-10.414,45.993-17.356\
 								c-7.81,13.017-18.224,25.166-32.108,36.448c-3.471,2.603-4.339,7.81-2.603,12.149c1.736,4.339,6.942,6.075,11.281,4.339\
 								l33.844-11.281C482.308,124.616,472.762,137.633,456.274,143.707z')
+.gradiend-bottom-line
 
 
 

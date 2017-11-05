@@ -1,12 +1,13 @@
 'use strict';
 
 $(function () {
-	// init material drop down menu
-	$('select').material_select();
-	Materialize.updateTextFields();
+  // init material drop down menu
+  $('select').material_select();
+  Materialize.updateTextFields();
 
-	Navigation.setWidth();
-	$('.burger-wrapper').on('click', Navigation.slideMenu);
+  Navigation.setWidth();
+  // $(window).on('resize', Navigation.setWidth)
+  $('.burger-wrapper').on('click', Navigation.slideMenu);
 });
 
 

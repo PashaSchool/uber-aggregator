@@ -4,6 +4,7 @@ $(function() {
 	Materialize.updateTextFields();
 
     Navigation.setWidth();
+    // $(window).on('resize', Navigation.setWidth)
     $('.burger-wrapper').on('click', Navigation.slideMenu)
 
 })

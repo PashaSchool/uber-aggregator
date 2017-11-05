@@ -13,9 +13,13 @@ $defaultBlack: #000;
 
 //breakpoints
 $breakpoints: (
-  'mobile' : ( min-width: 767px),
-  'small'  : ( min-width:  979px ),
-  'large'  : ( min-width: 1200px )
-);
+	'mobile' : ( min-width: 767px),
+	'small'  : ( min-width:  979px ),
+	'large'  : ( min-width: 1200px )
+	);
 //navigation
 $openMenuWidth: 80px;
+
+
+// $maxSize: 44px;
+// $lowerSize: 24px;

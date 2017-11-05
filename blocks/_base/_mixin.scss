@@ -9,3 +9,11 @@
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+@mixin rText($maxSize: "44px", $lowerSize: "24px") {
+	font-size: responsive;
+	max-font-size: unquote($maxSize);
+	min-font-size: unquote($lowerSize);
+	lower-font-range: 767px;
+	upper-font-range: 1280px;
+}

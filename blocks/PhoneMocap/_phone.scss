@@ -1,11 +1,11 @@
 .phone {
-	// margin: 0 auto;
 	width: 300px;
 	height: 600px;
 	border-radius: 15px;
 	border: 1px solid $grey;
 	background-color: white;
-	box-shadow: 0px 7px 60px rgba($black, .6);
+	box-shadow: 5px 0px 60px rgba($black, .9);
+	z-index: 1;
 }
 
 .phone-shell {

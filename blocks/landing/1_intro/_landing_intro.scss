@@ -42,11 +42,14 @@
 }
 
 .intro {
-    width: 50%;
+    width: calc(100% - 80px);
     height: auto;
     padding: 40px 100px;
     min-width: 300px;
     border: 1px solid rgba($darkWhite, .3);
+    @include breakpoint('mobile') {
+        width: 50%;
+    }
     &__title {
         text-align: center;
         color: $darkWhite;

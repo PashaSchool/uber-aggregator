@@ -1,22 +1,37 @@
 .join-us-wrapper {
-	margin-top: 40px;
-	padding: 80px;
+	margin: 0;
+	padding: 40px;
+
+	@include breakpoint("mobile") {
+		padding: 80px;
+		margin-top: 40px;
+	}
 }
 
 .header {
-	margin: 0 auto;
-	width: 50%;
-	min-width: 300px;
+	margin: 0;
+	width: 100%;
+	@include breakpoint("mobile") {
+		width: 50%;
+		min-width: 300px;
+		max-width: 600px;
+		margin: 0 auto;	
+	}
 
 	&__title  {
 		color: $grey;
+		@include rText(44px, 24px)
 	}
 
 	&__description {
 		color: $black;
 		font-weight: 300;
-		text-align: center;
-		padding: 0 20px;
+		text-align: left;
+		padding: 0;
+		@include breakpoint("mobile") {
+			padding: 0 0;
+			// text-align: center;
+		}
 
 	}
 }
@@ -26,22 +41,38 @@
 }
 
 .step-list {
+	width: 100%;
 	display: flex;
+
 	position: relative;
-	justify-content: space-around;
+	justify-content: center;
+	flex-flow: column wrap;
+
+	@include breakpoint("mobile") {
+		flex-flow: row nowrap;
+	}
 
 }
 
 .item {
-	
-	width: 30%;
-	min-width: 150px;
+	width: 100%;
+	margin: 20px auto;
+	min-width: 250px;
+
+	@include breakpoint("mobile") {
+		margin: 0;
+		display: block;
+		width: 30%;
+	}
 
 	&__counter {
-		display: flex;
+		display: none;
 		justify-content: center;
 		position: relative;
 		margin-bottom: 30px;
+		@include breakpoint("mobile") {
+			display: flex;
+		}
 
 		&:after {
 			content: '';
@@ -76,8 +107,11 @@
 
 	&__icon {
 		text-align: center;
+
+
 		width: 150px;
 		height: 150px;
+
 		border: 5px solid $darkWhite;
 		border-radius: 100%;
 		margin: 0 auto;
@@ -106,8 +140,7 @@
 		padding: 5px 0 10px;
 		text-align: center;
 		color: $grey;
-		font-size: responsive 12px 21px;
-		font-range: 420px 1280px;
+		@include rText(24px, 21px)
 
 	}
 	&__description {

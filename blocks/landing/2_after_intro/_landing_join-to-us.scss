@@ -3,34 +3,70 @@
 	position: relative;
 	height: 100%;
 	display: flex;
+	flex-flow: column wrap;
+
+	@include breakpoint("mobile") {
+		flex-flow: row nowrap;
+	}
+	
+
+}
+
+.description-conteiner {
+	width: 100%;
+	position: relative;
+
 	&:after {
 		content: "UBER";
 		display: block;
 		font-weight: bold;
-		font-size: responsive 76px 256px;
-		font-range: 420px 1280px;
+
+		font-size: responsive;
+		max-font-size: 256px;
+		min-font-size: 90px;
+		lower-font-range: 767px;
+		upper-font-range: 1280px;
 
 		position: absolute;
-		bottom: 120px;
-		color: $grey;
+		
+		color: rgba($grey, .7);
 		z-index: -1100;
-		left: 180px;
-		// bottom: -250px;
-		opacity: .3
-	}
-	
-}
 
-.description-conteiner {
-	width: 50%;
-	position: relative;
+		left: 40px;
+		bottom: 40px;
+		opacity: .3;
+		display: none;
+
+	}
+
+
+
+	@include breakpoint("mobile") {
+		width: 40%;
+		padding-left: 40px;
+		&:after {
+			display: block;
+		}
+	}
+	@include breakpoint("small") {
+		width: 50%;
+		padding-left: 100px;
+		&:after {
+			left: 140px;
+		}
+	}
 
 	&__title {
 		color: $grey;
 		padding: 5px;
 		position: relative;
+		font-size: responsive;
+		max-font-size: 44px;
+		min-font-size: 24px;
+		lower-font-range: 767px;
+		upper-font-range: 1280px;
 	}
-	
+
 
 	&__description {
 		padding: 5px;
@@ -41,29 +77,43 @@
 
 	&__additional_description {
 		margin-top: 80px;
-		border-top: 1px solid rgba($black, .3);
+		border: none;
+		@include breakpoint("mobile") {
+			border-top: 1px solid rgba($black, .3);
+		}
 	}
 }
 
 
 .join-form-container {
-	width: 50%;
-	padding-left: 100px;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	@include breakpoint("mobile") {
+		width: 60%;
+		padding-left: 40px;
+		justify-content: flex-start;
+	}
+	@include breakpoint("small") {
+		width: 50%;
+		padding-left: 100px;
+	}
 }
 
 .underscore{
 	&:after {
-			content: "";
-			margin: 10px 0;
-			width: 50px;
-			height: 3px;
-			display: block;
-			background-color: $blue;
-		}
+		content: "";
+		margin: 10px 0;
+		width: 50px;
+		height: 3px;
+		display: block;
+		background-color: $blue;
+	}
 }
 
 
-.underscore.left {
+.underscore.leftSide {
 	&:after {
 		content: '';
 		margin-left: auto;

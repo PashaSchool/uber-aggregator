@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "g": "gulp"
+    "g": "gulp",
+    "ftp" : "gulp ftp"
   },
   "config": {
     "src": {

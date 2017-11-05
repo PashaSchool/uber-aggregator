@@ -31,9 +31,16 @@ $(function () {
 // 	// console.log('still here')
 // })
 "use strict";
-'use strict';
+"use strict";
 
 var Navigation = function () {
+	var config = {
+		"css": {
+			"start": 0
+		},
+		"duration": 500
+	};
+
 	var $arrow = $('.burger-wrapper__stick-arrow');
 	var $menu = $('.menu-left');
 	var $menuSlide = $('.menu_slide');
@@ -63,8 +70,8 @@ var Navigation = function () {
 		if (!$arrow.hasClass(trigger)) {
 			animateArrow();
 			$menuSlide.animate({
-				left: 0
-			}, 500);
+				left: config.css.start
+			}, config.duration);
 			$overlay.css('display', 'block');
 			return;
 		}
@@ -72,8 +79,8 @@ var Navigation = function () {
 		$overlay.css('display', 'none');
 
 		$menuSlide.animate({
-			left: -menuWidth + 'px'
-		}, 500);
+			left: "-" + menuWidth + "px"
+		}, config.duration);
 		return;
 	};
 

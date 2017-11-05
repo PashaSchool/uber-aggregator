@@ -126,7 +126,6 @@
 		right: 0;
 		width: 100%;
 		height: 100px;
-		// display: none;
 
 		@include breakpoint("mobile") {
 			display: none;
@@ -156,7 +155,6 @@
 	width: 300px;
 	position: absolute;
 	bottom: -70px;
-	// margin-left: calc(50% - 230px);
 	left: -150px;
 	display: none;
 	@include breakpoint("mobile") {
@@ -164,8 +162,7 @@
 		justify-content: center;
 		align-items: center;
 		position: static;
-		// left: 0;
-		// width: 50%;
+
 	}
 	@include breakpoint("small") {
 		position: absolute;
@@ -177,11 +174,9 @@
 }
 
 .content {
-	// padding: 25px;
 	margin-right: 20px;
 	@include breakpoint("small") {
 		width: 100%;
-		// padding: 100px;
 		margin-left: 10px;
 		margin-right: 0;
 	}
@@ -205,27 +200,28 @@
 		font-weight: 300;
 		font-size: responsive 16px 14px;
 		font-range: 420px 1280px;
-		// line-height: 1.3;
-
 	}
 }
 
 .offers-wrapper {
 	padding: 80px 80px 60px 80px;
 	position: relative;
-	&:after {
-		content: "Offers";
-		display: block;
-		position: absolute;
-		left: 80px;
-		top: 0;
-		color: rgba($black, .3);
-		@include rText(134px, 60px);
-	}
+	// &:after {
+	// 	content: "Offers";
+	// 	display: block;
+	// 	position: absolute;
+	// 	left: 80px;
+	// 	top: 0;
+	// 	color: rgba($black, .3);
+	// 	@include rText(134px, 60px);
+	// }
 	@include breakpoint("mobile") {
 		padding: 140px 80px 60px 80px;
 	}
 
+}
+.header {
+	// margin: 0 !important;
 }
 
 
@@ -263,19 +259,7 @@
 		left: 5px;
 	}
 
-	&:after {
-		// transition: .3s linear;
-		// content: "";
-		// width: 100%;
-		// height: 100%;
-		// background-color: $white;
-		// display: block;
-		// position: absolute;
-		// z-index: -1;
-		// top: 15px;
-		// left: 15px;
-	}
-
+	
 	&__container {
 		display: flex;
 		flex-flow: wrap row;

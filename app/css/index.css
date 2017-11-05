@@ -568,18 +568,6 @@ h1, h2, h3, h4 {
 .offers-wrapper {
   padding: 80px 80px 60px 80px;
   position: relative; }
-  .offers-wrapper:after {
-    content: "Offers";
-    display: block;
-    position: absolute;
-    left: 80px;
-    top: 0;
-    color: rgba(33, 33, 33, 0.3);
-    font-size: responsive;
-    max-font-size: 134px;
-    min-font-size: 60px;
-    lower-font-range: 767px;
-    upper-font-range: 1280px; }
   @media (min-width: 767px) {
     .offers-wrapper {
       padding: 140px 80px 60px 80px; } }
@@ -654,7 +642,7 @@ h1, h2, h3, h4 {
 
 .join-us-wrapper {
   margin: 0;
-  padding: 40px; }
+  padding: 80px; }
   @media (min-width: 767px) {
     .join-us-wrapper {
       padding: 80px;

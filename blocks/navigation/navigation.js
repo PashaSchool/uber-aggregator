@@ -1,10 +1,20 @@
 const Navigation = (function(){
+	const config = {
+		"css" : {
+			"start" : 0
+		},
+		"duration" : 500
+	};
+
+	
 	let $arrow = $('.burger-wrapper__stick-arrow');
 	let $menu = $('.menu-left');
 	let $menuSlide = $('.menu_slide');
 	let trigger = 'trigger';
 	let $overlay = $('.overlay');
 	let menuWidth = $menu.width();
+
+
 
 	const animateArrow = () => $arrow.toggleClass(trigger);
 
@@ -26,8 +36,8 @@ const Navigation = (function(){
 		if(!$arrow.hasClass(trigger)) {
 			animateArrow();
 			$menuSlide.animate({
-				left: 0
-			}, 500)
+				left: config.css.start
+			}, config.duration)
 			$overlay.css('display', 'block')
 			return
 		}
@@ -35,8 +45,8 @@ const Navigation = (function(){
 		$overlay.css('display', 'none')
 
 		$menuSlide.animate({
-				left: -menuWidth + 'px'
-		}, 500)
+				left: `-${menuWidth}px`
+		}, config.duration)
 		return
 	}
 

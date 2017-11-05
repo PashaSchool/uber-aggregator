@@ -4,30 +4,45 @@ const Navigation = (function(){
 	let $menuSlide = $('.menu_slide');
 	let trigger = 'trigger';
 	let $overlay = $('.overlay');
-	let tl = new TimelineLite({paused: true});
+	let menuWidth = $menu.width();
 
+	const animateArrow = () => $arrow.toggleClass(trigger);
 
-	const animateArrow = () => $arrow.toggleClass(trigger); 
 	const setWidth = () => {
-		tl.from($menuSlide, .5, {left: -$menu.width() })
+		 $menuSlide.css('left', -menuWidth)
 	};
+
+	const checkMenuSlider = () => {
+		let curentWidth =  $menu.width();
+		if(menuWidth !== curentWidth) {
+			menuWidth = curentWidth;
+			setWidth.call(menuWidth)
+			return
+		}
+		return
+	}
 
 	const slideMenu = () => {
 		if(!$arrow.hasClass(trigger)) {
 			animateArrow();
-			tl.play();
+			$menuSlide.animate({
+				left: 0
+			}, 500)
 			$overlay.css('display', 'block')
 			return
 		}
 		animateArrow();
 		$overlay.css('display', 'none')
-		tl.reverse();
-		return
 
+		$menuSlide.animate({
+				left: -menuWidth + 'px'
+		}, 500)
+		return
 	}
 
 	return {
 		slideMenu,
-		setWidth
+		setWidth,
+		checkMenuSlider
 	}
 })();

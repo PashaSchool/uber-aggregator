@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "g": "gulp",
+    "dev": "gulp & wait",
     "deploy": "gulp deploy"
   },
   "config": {

@@ -3,8 +3,10 @@ $(function() {
 	$('select').material_select();
 	Materialize.updateTextFields();
 
-    Navigation.setWidth();
-    // $(window).on('resize', Navigation.setWidth)
-    $('.burger-wrapper').on('click', Navigation.slideMenu)
+	const menuWidth = $('.menu-left').width();
 
+    Navigation.setWidth.call(menuWidth);
+    
+    $('.burger-wrapper').on('click', Navigation.slideMenu);
+    $(window).on('resize', Navigation.checkMenuSlider)
 })

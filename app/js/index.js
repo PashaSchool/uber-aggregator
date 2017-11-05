@@ -5,9 +5,12 @@ $(function () {
   $('select').material_select();
   Materialize.updateTextFields();
 
-  Navigation.setWidth();
-  // $(window).on('resize', Navigation.setWidth)
+  var menuWidth = $('.menu-left').width();
+
+  Navigation.setWidth.call(menuWidth);
+
   $('.burger-wrapper').on('click', Navigation.slideMenu);
+  $(window).on('resize', Navigation.checkMenuSlider);
 });
 
 
@@ -36,31 +39,48 @@ var Navigation = function () {
 	var $menuSlide = $('.menu_slide');
 	var trigger = 'trigger';
 	var $overlay = $('.overlay');
-	var tl = new TimelineLite({ paused: true });
+	var menuWidth = $menu.width();
 
 	var animateArrow = function animateArrow() {
 		return $arrow.toggleClass(trigger);
 	};
+
 	var setWidth = function setWidth() {
-		tl.from($menuSlide, .5, { left: -$menu.width() });
+		$menuSlide.css('left', -menuWidth);
+	};
+
+	var checkMenuSlider = function checkMenuSlider() {
+		var curentWidth = $menu.width();
+		if (menuWidth !== curentWidth) {
+			menuWidth = curentWidth;
+			setWidth.call(menuWidth);
+			return;
+		}
+		return;
 	};
 
 	var slideMenu = function slideMenu() {
 		if (!$arrow.hasClass(trigger)) {
 			animateArrow();
-			tl.play();
+			$menuSlide.animate({
+				left: 0
+			}, 500);
 			$overlay.css('display', 'block');
 			return;
 		}
 		animateArrow();
 		$overlay.css('display', 'none');
-		tl.reverse();
+
+		$menuSlide.animate({
+			left: -menuWidth + 'px'
+		}, 500);
 		return;
 	};
 
 	return {
 		slideMenu: slideMenu,
-		setWidth: setWidth
+		setWidth: setWidth,
+		checkMenuSlider: checkMenuSlider
 	};
 }();
 //# sourceMappingURL=index.js.map

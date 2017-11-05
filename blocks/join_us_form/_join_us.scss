@@ -4,11 +4,8 @@
 	border: 1px solid $darkWhite;
 	border-radius: 3px;
 	box-shadow: 0px 2px 50px rgba($black, .7);
-	// position: absolute;
-	// bottom: -90px;
 	right: 100px;
 	@include breakpoint("mobile") {
-		// width: 400px;
 		width: 100%;
 	}
 	@include breakpoint("small") {
@@ -26,10 +23,6 @@
 .join-us-form {
 	width: 100%;
 	padding: 10px 20px;
-
-	// @include breakpoint("mobile") {
-
-	// }
 
 	&__button-container {
 		display: flex;

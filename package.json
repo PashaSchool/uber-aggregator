@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "g": "gulp",
-    "ftp" : "gulp ftp"
+    "deploy": "gulp deploy"
   },
   "config": {
     "src": {
@@ -37,10 +37,12 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
+    "gulp-util": "^3.0.8",
     "postcss-reporter": "^5.0.0",
     "require-dir": "^0.3.2",
     "rucksack-css": "^1.0.2",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "vinyl-ftp": "^0.6.0"
   },
   "dependencies": {}
 }

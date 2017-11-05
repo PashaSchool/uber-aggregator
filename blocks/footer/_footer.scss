@@ -1,33 +1,37 @@
 
-// .social-list {
-// 	display: flex;
-// 	&__soc {
-// 		svg {
-// 			width: 50px;
-// 			height: 50px;
-// 		}
-// 	}	
-// }
 .footer {
 	width: 100%;
-	padding: 15px 80px 40px 80px ;
+	padding: 140px 80px 40px 80px ;
 	position: relative;
 	margin-top: 100px;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
+	background-color: $black;
 
-	border-top-left-radius: 50% 20%;
-	border-top-right-radius: 50% 20%;
-	// &:after {
-	// 	content: 'CONTACT US';
-	// 	font-size: 90px;
-	// 	font-weight: bolder;
-	// 	position: absolute;
-	// 	color: rgba($grey, .3);
-	// 	left: 80px;
-	// 	bottom: -40px;
+	@include breakpoint("mobile") {
+		padding: 40px 50px 40px 50px;
+		margin-top: 50px;
+	}
 
-	// }	
+	@include breakpoint("small") {
+		background-color: #fff;
+		flex-flow: row wrap;
+		padding: 140px 80px 40px 80px;
+	}
+
+	svg.top {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100px;
+		display: block;
+
+		@include breakpoint("mobile") {
+			display: none;
+		}
+	}
+	
 }
 .stuff-content {
 	width: 100%;
@@ -35,19 +39,63 @@
 	justify-content: space-around;
 	align-items: center;
 	margin-right: 0;
+	flex-flow: column wrap;
+	@include breakpoint("small") {
+		width: 50%;
+		order: -1;
+	}
+}
+
+.stuff-box-wrapper {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid  rgba($grey, .2);
+	width: 100%;
+	@include breakpoint("small") {
+		width: 50%;
+		border-bottom: none;
+
+	}
 }
 
 .stuf-logo {
 	display: flex;
+	width: 100%;
+	@include breakpoint("small") {
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+	}
 	.logoImg{
-		width: 100px;
-		height: 100px;
-		background-color: $darkWhite;
+		width: 50%;
 		margin-right: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.img {
+			width: 100px;
+			height: 100px;
+			background-color: $darkWhite;
+			box-shadow: 0px 0px 15px -2px $darkWhite;
+		}
 	}
 	&__description {
+		width: 50%;
 		padding: 10px;
-		border-left: 1px solid rgba($grey, .6);
+		border-left: 1px solid rgba($grey, .2);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include breakpoint("small") {
+			border-left: none;
+			margin-top: 10px;
+			border-top: 1px solid rgba($grey, .2);
+			width: 100%;
+		}
 	}
 	&__private-date{
 
@@ -56,12 +104,16 @@
 		display: flex;
 		padding: 5px 0;
 		p {
-			color: $black;
+			color: $white;
+			letter-spacing: 1px;
+			@include breakpoint("small") {
+				color: $black;
+			}
 			font-weight: 300;
 			padding-left: 10px;
 		}
 		i {
-
+			color: $grey
 		}
 	}
 }
@@ -79,33 +131,54 @@
 		padding: 5px 0px;
 		text-decoration: underline;
 
+		a {
+			color: $white;
+			@include breakpoint("small") {
+				color: $grey;
+			}
+		}
+
 	}
 }
-
+.gradiend-bottom-line {
+	height: 5px;
+	background-image: linear-gradient(-135deg, #1e88e5,#b900b4,#f50057, #e040fb);
+}
 .social-stuff {
 	width: 100%;
-	padding: 80px 30px 0 30px;
-	// align-self: flex-end;
+	padding: 40px 30px 0 30px;
 	display: flex;
+	margin-top: 30px;
+	border-top: 1px solid rgba($grey, .2);
+
+	@include breakpoint("small") {
+		padding: 80px 30px 0 30px;
+	}
 
 	&__container-for-label {
 		width: 50%;
 		position: relative;
+		display: none;
+		@include breakpoint("small") {
+			display: block;
+		}
 
 		&:after {
 			content: "CONTACT US";
 			position: absolute;
-			display: block;
-			font-size: 90px;
-			color: $darkWhite;
+			color: rgba($black, .1);
 			left: 0;
 			bottom: 0;
 			font-weight: bolder;
 			line-height: 1;
+			@include rText(90px, 50px)
 		}
 	}
 	&__container-for-social {
-		width: 50%;
+		width: 100%;
+		@include breakpoint("small") {
+			width: 50%;
+		}
 	}
 	&__social-list {
 		width: 100%;
@@ -115,7 +188,7 @@
 
 	&__soc {
 		svg {
-			fill: $black;
+			fill: $grey;
 			width: 40px;
 			height: 40px;
 			margin-right: 25px;

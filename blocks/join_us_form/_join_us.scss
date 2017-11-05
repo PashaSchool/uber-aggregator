@@ -1,5 +1,5 @@
 .join-us-container {
-	width: 400px;
+	width: 100%;
 	background-color: white;
 	border: 1px solid $darkWhite;
 	border-radius: 3px;
@@ -7,6 +7,13 @@
 	// position: absolute;
 	// bottom: -90px;
 	right: 100px;
+	@include breakpoint("mobile") {
+		// width: 400px;
+		width: 100%;
+	}
+	@include breakpoint("small") {
+		width: 400px;
+	}
 	&__title {
 		padding: 20px 20px 10px;
 		text-align: center;
@@ -19,6 +26,10 @@
 .join-us-form {
 	width: 100%;
 	padding: 10px 20px;
+
+	// @include breakpoint("mobile") {
+
+	// }
 
 	&__button-container {
 		display: flex;

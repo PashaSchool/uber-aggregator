@@ -6,6 +6,8 @@
 	overflow: hidden;
 	z-index: 2000;
 
+	display: none;
+
 	@include breakpoint('mobile') {
 		max-width: 480px;
 	}

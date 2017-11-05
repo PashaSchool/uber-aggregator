@@ -2,17 +2,24 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 100px 0;
+	padding: 80px;
+	@include breakpoint("mobile") {
+		padding: 100px 0;
+	}
 }
 
 .media-container {
 	display: flex;
-	width: 60%;
+	width: 100%;
 	max-width: 1100px;
 	border: 1px solid rgba($grey, .3);
 	border-radius: 5px;
 
 	box-shadow: 0px 10px 40px rgba($black, .3);
+
+	@include breakpoint("mobile") {
+		width: 60%;
+	}
 }
 
 .news-container {
@@ -35,6 +42,7 @@
 		color: #fff;
 		line-height: 0;
 		font-size: 74px;
+
 
 	}
 	&__read-more {
@@ -81,6 +89,7 @@ ul.news-box {
 	&__title {
 		position: relative;
 		color: $blue;
+		@include rText(44px, 24px)
 		&:after {
 			content: '';
 			width: 5px;

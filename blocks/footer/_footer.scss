@@ -1,12 +1,14 @@
 
 .footer {
 	width: 100%;
-	padding: 140px 80px 40px 80px ;
+	// padding: 140px 80px 40px 80px ;
+	padding: 140px 10px 20px;
 	position: relative;
-	margin-top: 100px;
+	margin-top: 50px;
 	display: flex;
 	flex-flow: row wrap;
 	background-color: $black;
+
 
 	@include breakpoint("mobile") {
 		padding: 40px 50px 40px 50px;
@@ -40,7 +42,9 @@
 	align-items: center;
 	margin-right: 0;
 	flex-flow: column wrap;
+
 	@include breakpoint("small") {
+		border-top: 1px solid rgba($grey, .2);
 		width: 50%;
 		order: -1;
 	}
@@ -53,9 +57,11 @@
 	padding-bottom: 20px;
 	border-bottom: 1px solid  rgba($grey, .2);
 	width: 100%;
+	
 	@include breakpoint("small") {
 		width: 50%;
 		border-bottom: none;
+		border-top: 1px solid rgba($grey, .2);
 
 	}
 }
@@ -63,6 +69,7 @@
 .stuf-logo {
 	display: flex;
 	width: 100%;
+	
 	@include breakpoint("small") {
 		flex-flow: column nowrap;
 		justify-content: center;
@@ -90,6 +97,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		@include iphoneText();
 		@include breakpoint("small") {
 			border-left: none;
 			margin-top: 10px;
@@ -113,7 +121,15 @@
 			padding-left: 10px;
 		}
 		i {
-			color: $grey
+			color: $grey;
+			display: none;
+			@include breakpoint("iphone") {
+				display: block;
+				@include iphoneText()
+			}
+			@include breakpoint("small") {
+				font-size: 24px;
+			}
 		}
 	}
 }
@@ -133,6 +149,8 @@
 
 		a {
 			color: $white;
+			font-weight: 300;
+			@include iphoneText();
 			@include breakpoint("small") {
 				color: $grey;
 			}
@@ -193,6 +211,12 @@
 			height: 40px;
 			margin-right: 25px;
 		}
+
+		&:last-child svg{
+			margin-right: 0;
+		}
+
 	}
+	
 }
 

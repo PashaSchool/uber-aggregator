@@ -3,10 +3,7 @@
 	display: flex;
 	position: relative;
 	flex-flow: column wrap;
-	// @include breakpoint("mobile") {
-	// 	flex-flow: row nowrap;
-	// 	padding: $openMenuWidth;
-	// }
+
 	@include breakpoint("small") {
 		flex-flow: row wrap;
 		padding: $openMenuWidth;
@@ -28,9 +25,6 @@
 	margin-bottom: 50px;
 
 	@include breakpoint("mobile") {
-		// padding-right: 180px;
-		// padding-left: 10px;
-		// padding-top: 20px;
 		width: 100%;
 		padding: 0;
 	}
@@ -206,32 +200,60 @@
 .offers-wrapper {
 	padding: 80px 80px 60px 80px;
 	position: relative;
-	// &:after {
-	// 	content: "Offers";
-	// 	display: block;
-	// 	position: absolute;
-	// 	left: 80px;
-	// 	top: 0;
-	// 	color: rgba($black, .3);
-	// 	@include rText(134px, 60px);
-	// }
 	@include breakpoint("mobile") {
-		padding: 140px 80px 60px 80px;
+		padding: 140px 0 60px 0;
 	}
 
 }
-.header {
-	// margin: 0 !important;
+
+.offers-content {
+	position: relative;
+	background-color: $black;
+	padding: 100px 0;
+
+	.header {
+		padding-bottom: 40px;
+
+		&__description {
+			color: $white;
+		}
+	}
+
+	&:after {
+		content: "Offers";
+		@include rText(120px, 90px)
+		display: block;
+		position: absolute;
+		left: 80px;
+		bottom: 0;
+		color: rgba($darkWhite, .4);
+	}
+	svg {
+		width: 100%;
+		height: 100px;
+		position: absolute;
+
+	}
+
+	svg.top {
+		top: 0;
+		left: 0;
+	}
+
+	svg.bottom {
+		bottom: 0;
+	}
 }
 
-
 .offers-list {
-	padding-top: 40px;
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	flex-flow: wrap column;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
+	border-top: 5px solid rgba($white, .1);
+	border-bottom: 5px solid rgba($white, .1);
+	// background-color: $black;
 
 	@include breakpoint("mobile") {
 		justify-content: space-around;
@@ -239,14 +261,18 @@
 	}
 }
 
+.offers-box {
+	width: 100%;
+	padding: 0 80px;
+
+}
+
 .item-box {
-	min-width: 350px;
+	// min-width: 350px;
 	max-width: 550px;
 	width: 100%;
 	margin: 15px;
 	position: relative;
-	background-color: #fff;
-	box-shadow: 0px 10px 40px rgba($black, .3);
 	padding-bottom: 20px;
 
 	@include breakpoint("mobile") {
@@ -269,9 +295,10 @@
 		width: 100%;
 		color: $grey;
 		padding: 5px 10px;
-		text-transform: uppercase;
-		h6 {
 
+		text-transform: uppercase;
+		h5 {
+			margin: 0;
 		}
 	}
 	&__body {
@@ -297,20 +324,21 @@
 	}
 	&__description {
 		width: 70%;
-		color: $black;
+		color: $white;
 		font-weight: 300;
 		padding: 5px 5px 5px 10px;
 	}
 }
 
 .read-more{
-	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 80px;
 	display: flex;
 	justify-content: flex-end;
 	&__anchor-right {
 		padding: 5px;
 		a {
-			color: $black;
+			color: $white;
 			line-height: 1;
 			text-decoration: underline;
 		}

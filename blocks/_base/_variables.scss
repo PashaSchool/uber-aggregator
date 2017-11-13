@@ -13,6 +13,7 @@ $defaultBlack: #000;
 
 //breakpoints
 $breakpoints: (
+	'iphone' : (min-width: 321px),
 	'mobile' : ( min-width: 767px),
 	'small'  : ( min-width:  979px ),
 	'large'  : ( min-width: 1200px )

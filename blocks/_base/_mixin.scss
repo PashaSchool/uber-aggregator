@@ -17,3 +17,12 @@
 	lower-font-range: 767px;
 	upper-font-range: 1280px;
 }
+
+
+@mixin iphoneText($maxSize: "14px", $lowerSize: "10px") {
+  font-size: responsive;
+  max-font-size: unquote($maxSize);
+  min-font-size: unquote($lowerSize);
+  lower-font-range: 300px;
+  upper-font-range: 767px;
+}

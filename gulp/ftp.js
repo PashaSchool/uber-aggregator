@@ -15,7 +15,7 @@ gulp.task( 'deploy', function () {
     var globs = [
         'app/css/**',
         'app/js/**',
-        'app/index.html'
+        'app/*.html'
     ];
 
     return gulp.src( globs, { base: './app/', buffer: false } )

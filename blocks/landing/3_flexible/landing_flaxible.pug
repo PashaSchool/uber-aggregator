@@ -61,25 +61,30 @@
 			include ../../PhoneMocap/phone
 
 +b.SECTION.offers-wrapper
-	+b.header
-		+e.H3.title.underscore
-			|  Lorem ipsum dolor sit.
-		+e.P.description
-			|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eum earum pariatur! Sequi consequuntur non quam molestias molestiae neque maxime, voluptatibus error, ducimus minima nihil itaque sunt, aspernatur quos fugiat.
 	+b.offers-content
-		+b.UL.offers-list
-			each offer in content.offers
-				+b.LI.item-box
-					+e.container
-						+e.title: h5= offer.title
-						+e.body
-							+e.icon
-								//- img(src="./", alt="img")
-								div.fantom
-							+e.description
-								+e.P.text= offer.description
-	+b.read-more
-		+e.anchor-right
-			a(href='#')
-				| read more about partners & offers >
+		+b.header
+			+e.H3.title.underscore
+				|  Lorem ipsum dolor sit.
+			+e.P.description
+				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque eum earum pariatur! Sequi consequuntur non quam molestias molestiae neque maxime, voluptatibus error, ducimus minima nihil itaque sunt, aspernatur quos fugiat.
+		svg.top(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+			polygon(fill='white', points='100,0 0,100 0,0')
+		svg.bottom(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 100 100', preserveaspectratio='none')
+			polygon(fill='white', points='0,100 100,0 100,100')
+		+b.offers-box
+			+b.UL.offers-list
+				each offer in content.offers
+					+b.LI.item-box
+						+e.container
+							+e.title: h5= offer.title
+							+e.body
+								+e.icon
+									//- img(src="./", alt="img")
+									div.fantom
+								+e.description
+									+e.P.text= offer.description
+			+b.read-more
+				+e.anchor-right
+					a(href='#')
+						| read more about partners & offers >
 

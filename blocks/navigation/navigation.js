@@ -5,7 +5,6 @@ const Navigation = (function(){
 		},
 		"duration" : 500
 	};
-
 	
 	let $arrow = $('.burger-wrapper__stick-arrow');
 	let $menu = $('.menu-left');
@@ -13,8 +12,6 @@ const Navigation = (function(){
 	let trigger = 'trigger';
 	let $overlay = $('.overlay');
 	let menuWidth = $menu.width();
-
-
 
 	const animateArrow = () => $arrow.toggleClass(trigger);
 

@@ -11,7 +11,11 @@
 @import "landing/3_flexible/_landing_flaxible.scss";
 @import "landing/4_connect_is_easy/connect_is_easy";
 @import "landing/5_have_any_question/question";
-
 @import "landing/7_news_container/news";
+
+@import "search_form/_searchForm.scss";
+@import "news_list/news_list";
+@import "pagination/pagination";
+
 
 @import "footer/footer"

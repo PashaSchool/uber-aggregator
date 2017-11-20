@@ -1,0 +1,24 @@
++b.contact-us-intro__
+	+b.DIV.parallax-container.contact-us-intro
+		+b.parallax
+			img(src="img/contact.jpg", alt="contact us")
+	+b.container_contactus
+		+b.DIV.header
+			+e.H2.title.underscore #{tariff.title}
+			+e.P.description
+				|   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quam deserunt officiis in tempore ducimus qui enim, doloremque quos molestiae dolor ullam inventore ipsam doloribus sunt aliquid, blanditiis suscipit reiciendis!
+
++b.contact-us-wrapper
+	+b.contact-us-content
+		+b.header
+			+e.H2.title.underscore 
+				| Lorem ipsum dolor.
+			+e.P.description
+				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aliquid recusandae sapiente itaque laudantium ullam quos inventore totam, unde eaque rem odit id tempora voluptatum dolorem earum quibusdam labore tempore.
+	+b.contact-us-area
+		+b.contact-us-map
+			+b.DIV.map-container
+				div#map
+			+b.contact-us-form
+				+e.form-wrapper
+					include ../landing/5_have_any_question/contact_form.pug

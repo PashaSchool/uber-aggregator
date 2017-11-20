@@ -99,6 +99,7 @@
 		bottom: 40px;
 		left: 141px;
 		display: none;
+		font-weight: bolder;
 	}
 
 	@include breakpoint("mobile") {
@@ -119,7 +120,7 @@
 		top: 0;
 		right: 0;
 		width: 100%;
-		height: 100px;
+		height: 50px;
 
 		@include breakpoint("mobile") {
 			display: none;
@@ -208,25 +209,26 @@
 
 .offers-content {
 	position: relative;
-	background-color: $black;
-	padding: 100px 0;
+	// background-color: $black;
+	padding: 100px 0 0 0;
 
 	.header {
 		padding-bottom: 40px;
 
 		&__description {
-			color: $white;
+			// color: $white;
 		}
 	}
 
 	&:after {
-		content: "Offers";
-		@include rText(120px, 90px)
-		display: block;
-		position: absolute;
-		left: 80px;
-		bottom: 0;
-		color: rgba($darkWhite, .4);
+		// content: "Offers";
+		// @include rText(120px, 90px)
+		// display: block;
+		// position: absolute;
+		// opacity: .1;
+		// left: 80px;
+		// bottom: 0;
+		// color: rgba($darkWhite, .4);
 	}
 	svg {
 		width: 100%;
@@ -251,8 +253,8 @@
 	justify-content: space-around;
 	flex-flow: wrap column;
 	padding-bottom: 10px;
-	border-top: 5px solid rgba($white, .1);
-	border-bottom: 5px solid rgba($white, .1);
+	border-top: 1px solid rgba($white, .1);
+	border-bottom: 1px solid rgba($white, .1);
 	// background-color: $black;
 
 	@include breakpoint("mobile") {
@@ -264,6 +266,8 @@
 .offers-box {
 	width: 100%;
 	padding: 0 80px;
+
+	// border-bottom: 1px solid #000;
 
 }
 
@@ -324,7 +328,7 @@
 	}
 	&__description {
 		width: 70%;
-		color: $white;
+		color: $black;
 		font-weight: 300;
 		padding: 5px 5px 5px 10px;
 	}
@@ -338,7 +342,7 @@
 	&__anchor-right {
 		padding: 5px;
 		a {
-			color: $white;
+			color: $black;
 			line-height: 1;
 			text-decoration: underline;
 		}

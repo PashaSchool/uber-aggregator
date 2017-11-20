@@ -1,0 +1,140 @@
+.about-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 10;
+	max-width: 600px;
+
+	.header {
+		width: 100%;
+		text-shadow: 0 0 1px #000;
+	}
+
+	.description {
+		color: $grey;
+		line-height: 1.5;
+		font-weight: 300;
+
+	}
+}
+
+.partners-wrapper {
+	padding: 30px;
+	background-color: $grey;
+
+	&__parters-list {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
+		align-items: center;
+
+	}
+
+	&__partner {
+		max-width: 100px;
+		padding: 15px;
+		background-color: $white;
+		margin: 5px;
+	}
+}
+
+.about-wrapper {
+	padding: 40px 80px;
+	width: 100%;
+
+	.header {
+		margin: 0;
+		min-width: 100%;
+		&__title {
+			text-align: left;
+
+		}
+	}
+}
+
+
+.why-as-wrapper {
+	padding: 40px 80px;
+	.header {
+		// margin: 0;
+
+		&__title {
+			// text-align: left;
+
+		}
+	}
+
+
+}
+
+
+.why-us-list {
+	margin: 30px 0;
+	&__list{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__item-wrapper {
+		// box-shadow: 0 0 1px #000;
+		width: 25%;
+		max-width: 300px;
+		position: relative;
+		padding: 30px 0;
+	}
+
+
+	&__header {
+		padding: 30px 0;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		svg {
+			width: 100px;
+			height: 100px;
+
+			path, polygon, rect {
+				fill: $grey
+			}
+		}
+	}
+
+	&__body {
+		margin-bottom: 15px;
+		padding: 0 10px;
+
+		p {
+			font-weight: 300;
+			left: 300px;
+			text-align: center;
+			color: $black;
+			line-height: 1.5;
+		}
+	}
+
+	&__footer {
+		position: absolute;
+		bottom: -15px;
+		left: 0;
+		right: 0;
+		
+		display: flex;
+		justify-content: center;
+		
+
+		p {
+			color: $grey;
+			font-weight: bolder;
+			line-height: 1.8;
+			padding: 10px;
+			line-height: 2;
+			background-color: #fff;
+			left: 300px;
+			border-bottom: 1px solid $blue;
+
+		}
+	}
+}

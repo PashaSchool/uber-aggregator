@@ -1,0 +1,16 @@
++b.comment-wrapper
+	form#post-comment
+		+e.top-form
+			.input-field
+				input#comment_name.validate(type='text')
+				label(for='comment_name') Your Name
+			.input-field
+				input#comment-email.validate(type='text')
+				label(for='comment-email') Your Email
+		+e.bottom-form
+			.input-field
+				textarea#comment.materialize-textarea
+				label(for='comment') Message
+			button(class='waves-effect waves-light btn blue', type='submit')
+				| Comment
+

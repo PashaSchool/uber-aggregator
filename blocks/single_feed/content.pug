@@ -1,0 +1,36 @@
+//- #{content.feed.list[...array]}
++b.DIV.single-feed-container
+	+b.DIV.photo-box
+		+e.photo-feed-wrapper
+			+e.SPAN.feed-photo
+			+e.SPAN.label-category: span
+				| Category
+	+b.header-box
+		+e.tmestamp-wrapper
+			+e.SPAN.day: i
+				| #{content.feed.day}
+			+e.SPAN.month: i
+				| #{content.feed.month}
+			+e.SPAN.year: i
+				| #{content.feed.year}
+		+e.DIV.header 
+			+e.H2.title
+				| #{content.feed.title}
+
+	+b.content-box
+		+e.description-wrapper: p
+			| #{content.feed.description}
+			| #{content.feed.description}
+		+e.description-list
+			+e.H6.title #{content.feed.title}
+			+e.UL.list
+				each item in content.feed.list
+					+e.LI.item #{item}
+
+		+e.description-wrapper: p
+			| #{content.feed.description}
+		+e.description-list
+			+e.H6.title #{content.feed.title}
+			+e.UL.list
+				each item in content.feed.list
+					+e.LI.item #{item}

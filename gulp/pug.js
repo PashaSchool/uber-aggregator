@@ -10,7 +10,8 @@ gulp.task('pug', function() {
 		locals : {
 			nav: JSON.parse(fs.readFileSync('./data/navigation.json', 'utf-8')),
 			content: JSON.parse(fs.readFileSync('./data/content.json', 'utf-8')),
-			field: JSON.parse(fs.readFileSync('./data/join_us.json', 'utf-8'))
+			field: JSON.parse(fs.readFileSync('./data/join_us.json', 'utf-8')),
+			tariff: JSON.parse(fs.readFileSync('./data/tariff.json', 'utf-8'))
 		},
 		pretty: true
 	}))

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "img": "gulp imgmin"
   },
   "config": {
     "src": {
@@ -31,6 +32,8 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-imagemin": "^4.0.0",
     "gulp-notify": "^3.0.0",
     "gulp-postcss": "^7.0.0",
     "gulp-pug": "^3.3.0",

@@ -3,6 +3,7 @@
 		"Home" : "/",
 		"News" : "news.html",
 		"Vacantion" : "vacansion.html",
-		"Contact us" : "about.html"
+		"About as" : "about.html",
+		"tarrifis" : "tariffs.html"
 	}
 }

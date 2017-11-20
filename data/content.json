@@ -21,6 +21,14 @@
 		"month" : "sep",
 		"year" : "2017"
 	}],
+	"feed": {
+		"title" : "Lorem ipsum dolor sit.",
+		"day" : "13",
+		"month" : "September",
+		"year" : "2017",
+		"list" : ["sit amet, consectetur adipisicing elit. Labo", "sit amet, consectetur adipisicing elit. Labo", "sit amet, consectetur adipisicing elit. Labo", "sit amet, consectetur adipisicing elit. Labo", "sit amet, consectetur adipisicing elit. Labo"],
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vitae consectetur minus repudiandae exercitationem culpa asperiores fugiat quam similique eos labore totam, hic quo, doloremque assumenda, delectus, esse. Aliquam eaque deserunt in, eos rerum necessitatibus. Neque eveniet at velit. Impedit obcaecati, praesentium architecto saepe vero officiis! Sed, ea, aperiam. Alias distinctio asperiores, vitae dicta! Cum ullam minima debitis at ab expedita eligendi mollitia tempore eum odit dicta facilis molestias numquam unde, quibusdam consequuntur vel possimus nobis sit necessitatibus, nihil ipsam sapiente et? Ut, optio. Quidem totam aspernatur voluptatum asperiores corrupti sed blanditiis quo illo explicabo, nobis dicta natus nostrum, esse saepe ipsum! Sit earum quaerat voluptas quas omnis ipsa incidunt consequuntur aut, quisquam voluptatum cupiditate perspiciatis similique eveniet officia expedita iure cumque, quia vitae consequatur officiis eius illo saepe quis commodi! Aut voluptates aspernatur quae dolorem, fugit ipsa, in maiores cum. Earum blanditiis iure velit atque voluptas cum nemo, sint."
+	},
 	"offers" : [
 		{
 			"title" : "great offers title 1",

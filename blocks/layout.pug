@@ -7,23 +7,26 @@ html(lang='en')
 	head
 		include head/head
 	body
-		div.container-wrapper-uber
-			block navigation
-				include navigation/navigation
-			block content
-				
-				section 2
+		div.uber-aggregator-container
+			div.container-wrapper-uber
+				block navigation
+					include navigation/navigation
+				block content
+					
+					section 2
 
-		block footer
-			include footer/footer
-		block scripts
-			script(src='libs/jquery/dist/jquery.min.js')
+			block footer
+				include footer/footer
+			block scripts
+				script(src='libs/jquery/dist/jquery.min.js')
 
-			script(src='libs/gsap/src/minified/plugins/CSSPlugin.min.js')
-			script(src='libs/gsap/src/minified/easing/EasePack.min.js')
-			script(src='libs/gsap/src/minified/TweenLite.min.js')
-			script(src='libs/gsap/src/minified/TimelineLite.min.js')
+				script(src='libs/gsap/src/minified/plugins/CSSPlugin.min.js')
+				script(src='libs/gsap/src/minified/easing/EasePack.min.js')
+				script(src='libs/gsap/src/minified/TweenLite.min.js')
+				script(src='libs/gsap/src/minified/TimelineLite.min.js')
 
-			script(src='libs/materialize/dist/js/materialize.min.js')
-			script(src='js/index.js')
+				script(src='libs/materialize/dist/js/materialize.min.js')
+				script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCA7vNDxC7fkBNV9f7yfTFghJBerE8Pl2k&callback=initMap', async='', defer='')
+
+				script(src='js/index.js')
 			

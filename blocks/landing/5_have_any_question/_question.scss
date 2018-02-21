@@ -22,13 +22,18 @@
 		padding: 0 40px;
 		width: 100%;
 		color: $grey;
-		@include rText(44px, 24px)
+		@include rText(44px, 24px);
+
+
 	}
 	&__description{
 		padding: 0 40px;
 		color: $black;
 		font-weight: 300;
 
+	}
+	&__container-form {
+		width: 50%;
 	}
 	
 	
@@ -63,4 +68,158 @@
 		margin: 0;
 		width: 100%;
 	}
+}
+
+
+.holder-form {
+
+}
+
+.custom-form-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.form-contact-us {
+	width: 90%;
+	background-color: #fff;
+	position: static;
+	padding: 0;
+
+	@include breakpoint('small') {
+		background-color: $black;
+		padding: 100px 10px;
+		height: 100%;
+		position: relative;
+		width: 80%;
+
+	}
+
+	@include breakpoint('small') {
+		background-color: $black;
+	}
+
+
+	&__left {
+		width: 100%;
+	}
+	&__right {
+		width: 100%;
+	}
+	@include breakpoint('small') {
+		&__left {
+			width: 40%;
+		}
+		&__right {
+			width: 50%;
+		}
+		
+	}
+
+
+	&__bottom-btn{
+		position: static;
+		display: flex;
+		justify-content: center;
+		@include breakpoint('small') {
+			display: block;
+			position: absolute;
+			bottom: -20px;
+			right: -20px;
+			z-index: 2;
+		}
+		button {
+			
+			@include breakpoint('iphone') {
+			margin-right: auto;
+				margin-bottom: 0;
+				width: 200px;
+				height: 50px;
+				box-shadow: 0 0 20px $blue;
+				
+			}
+		}
+	}
+	&__input-wrapper {
+		width: 100%;
+		padding: 30px 0;
+		position: relative;
+		z-index: 10;
+
+
+		@include breakpoint("small") {
+			&:after {
+				content: '';
+				width: calc(100% + 100px);
+				height: 100%;
+				position: absolute;
+				z-index: -1;
+				box-shadow: 0 0 30px rgba($black, .6);
+				background-color: $white;
+				display: block;
+				top: 0;
+				left: -55px;
+			}
+
+		}
+
+		.header {
+			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			&__title {
+				&:after {
+					display: none;
+				}
+			}
+			@include breakpoint("iphone") {
+				margin: 0;
+				margin-bottom: 60px;
+				&__title {
+					text-align: center;
+				}
+			}
+
+		}
+	}
+	&:nth-of-type(1) .input-field {
+		margin-top: 0;
+	}
+	@include breakpoint('iphone') {
+		&:nth-of-type(1) .input-field {
+			margin-top: 30px;
+		}
+	}
+}
+
+.map {
+	position: static;
+	width: 100%;
+	height: 50vh;
+	margin-top: 40px;
+	@include breakpoint("small") {
+		width: 60%;
+		height: 300px;
+		box-shadow: 0 0 30px rgba($black, .6);
+		position: absolute;
+		right: -140px;
+		top: 150px;
+		z-index: 30;
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+
+		display: block;
+		top: 0;
+		left: 0;
+		position: absolute;
+		z-index: -1;
+	}
+
+
 }

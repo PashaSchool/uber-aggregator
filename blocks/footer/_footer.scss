@@ -19,7 +19,7 @@
 	@include breakpoint("small") {
 		background-color: #fff;
 		flex-flow: row wrap;
-		padding: 140px 80px 40px 80px;
+		padding: 50px 80px 40px 80px;
 	}
 
 	svg.top {
@@ -87,9 +87,21 @@
 		.img {
 			width: 100px;
 			height: 100px;
-			background-color: $darkWhite;
-			box-shadow: 0px 0px 15px -2px $darkWhite;
+			svg {
+				path {
+					fill: $white;
+				}
+			}
+			@include breakpoint("small") {
+				svg {
+					path {
+						fill: $black;
+					}
+				}
+
+			}
 		}
+
 	}
 	&__description {
 		width: 50%;

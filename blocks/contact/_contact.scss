@@ -1,18 +1,13 @@
 .contact-us-intro {
-
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	// flex-direction: column;
 	position: relative;
-	// z-index: 10;
-	// max-width: 600px;
 
 }
 .contact-us-content {
 	margin: 10px 0;
 	.header {
-		margin: 0;
+		display: flex;
+		justify-content: center;
+		
 	}
 }
 .container_contactus{
@@ -26,10 +21,14 @@
 	align-items:center;
 	z-index: 10;
 
-	
-
 	.header {
 		width: 100%;
+		padding: 30px;
+
+		@include breakpoint("mobile") {
+			padding: 30px 0;
+		}
+		
 
 		&__title {
 			text-shadow: 0 0 1px #000;
@@ -40,42 +39,21 @@
 			text-shadow: 0 0 1px #000;
 		}
 	}
-
-
-}
-#map {
-	width: 100%;
-	height: 100%;
 }
 
-.contact-us-area {
-	width: 100%;
-	
-}
 .contact-us-wrapper {
-	padding: 40px 80px;
-}
-
-.contact-us-area {
-	background-color: $black;
-}
-
-.contact-us-map {
-	display: flex;
-	justify-content: space-between;
-}
-
-.map-container {
-	width: 50%;
-}
-.contact-us-form {
-	width: 50%;
-	&__form-wrapper {
+	padding: 0;
+	@include breakpoint('mobile') {
 		width: 100%;
+		padding: 100px;
 
-		div {
-			margin: 0;
-			width: 100%;
-		}
+	}
+
+	&__contact-container {
+
+	}
+
+	&__holder-form {
+		background-color: silver;
 	}
 }

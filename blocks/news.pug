@@ -1,6 +1,14 @@
 extends layout.pug
 
 block content
+	+b.intro-about.parallax-container
+		+b.parallax
+			img(src="img/news.jpg")
+		+b.about-container
+			+b.DIV.header
+				+e.H2.title.underscore #{tariff.title}
+				+b.P.description
+					|   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quam deserunt officiis in tempore ducimus qui enim, doloremque quos molestiae dolor ullam inventore ipsam doloribus sunt aliquid, blanditiis suscipit reiciendis!
 	include search_form/searchForm
 	include news_list/news_list
 	include pagination/pagination

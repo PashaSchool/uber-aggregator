@@ -31,19 +31,19 @@
 	},
 	"offers" : [
 		{
-			"title" : "great offers title 1",
+			"title" : "great offers title",
 			"description" : "ipsum dolor sit amet, consectetur adipisicing, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
 		},
 		{
-			"title" : "great offers title 2",
+			"title" : "great offers title",
 			"description" : "ipsum dolor sit amet, consectetur adipisicing laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
 		},
 		{
-			"title" : "great offers title 3",
+			"title" : "great offers title",
 			"description" : "ipsum dolor sit amet, consectetur adipisicpellat, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
 		},
 		{
-			"title" : "great offers title 4",
+			"title" : "great offers title",
 			"description" : "ipsum dolor sit amet, consectetur adipisit, laudantium aspernatur ad voluptate, magnam sint illum. Quam sapiente cumque doloremque illum quos nobis dolor veniam accusantium consequuntur, impedit."
 		}
 	],

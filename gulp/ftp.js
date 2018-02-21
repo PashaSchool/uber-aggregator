@@ -16,7 +16,8 @@ gulp.task( 'ftp', function () {
         'app/css/**',
         'app/js/**',
         'app/img/**',
-        'app/contact.html',
+        'app/index2.html',
+        'app/about.html',
     ];
 
     return gulp.src( globs, { base: './app/', buffer: false } )

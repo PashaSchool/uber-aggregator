@@ -3,8 +3,8 @@
 	padding: 80px;
 
 	@include breakpoint("mobile") {
-		padding: 80px;
-		// margin-top: 40px;
+		padding: 40px 80px;
+		// margin-40px top: 40px;
 	}
 }
 
@@ -91,7 +91,7 @@
 			line-height: 50px;
 			text-align: center;
 			display: block;
-			fill: $blue;
+			fill: $grey;
 			border-radius: 100%;
 			color: $blue;
 
@@ -99,7 +99,7 @@
 			font-size: 16px;
 
 			.circle {
-				fill: $darkWhite;
+				// fill: $darkWhite;
 			}
 
 		}
@@ -112,12 +112,12 @@
 
 		width: 150px;
 		height: 150px;
-
-		border: 5px solid $darkWhite;
-		border-radius: 100%;
+		// border: 5px solid $darkWhite;
+		// border-radius: 100%;
+		border-radius: 5px;
 		margin: 0 auto;
 		position: relative;
-		background-color: #fff;
+		background-color: $white;
 
 		display: flex;
 		align-items: center;
@@ -126,7 +126,7 @@
 		svg {
 			width: 80px;
 			height: 80px;
-			fill: $blue;
+			fill: $black;
 		}
 	}
 
@@ -138,9 +138,16 @@
 
 	}
 	&__title {
+		position: relative;
+		z-index: 20;
+		margin: 0;
+		line-height: 1;
+		margin-top: -35px;
 		padding: 5px 0 10px;
 		text-align: center;
-		color: $grey;
+		text-transform: uppercase;
+		color: $blue;
+		font-weight: bold;
 		@include rText(24px, 21px)
 
 	}

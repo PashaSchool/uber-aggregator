@@ -1,3 +1,5 @@
+include ../landing/5_have_any_question/contact_form.pug
+
 +b.contact-us-intro__
 	+b.DIV.parallax-container.contact-us-intro
 		+b.parallax
@@ -8,17 +10,40 @@
 			+e.P.description
 				|   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quam deserunt officiis in tempore ducimus qui enim, doloremque quos molestiae dolor ullam inventore ipsam doloribus sunt aliquid, blanditiis suscipit reiciendis!
 
+//- +b.contact-us-wrapper
+//- 	+b.contact-us-content
+//- 		+b.header
+//- 			+e.H2.title.underscore 
+//- 				| Contact as
+			
+		div#map
 +b.contact-us-wrapper
-	+b.contact-us-content
-		+b.header
-			+e.H2.title.underscore 
-				| Lorem ipsum dolor.
-			+e.P.description
-				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aliquid recusandae sapiente itaque laudantium ullam quos inventore totam, unde eaque rem odit id tempora voluptatum dolorem earum quibusdam labore tempore.
-	+b.contact-us-area
-		+b.contact-us-map
-			+b.DIV.map-container
-				div#map
-			+b.contact-us-form
-				+e.form-wrapper
-					include ../landing/5_have_any_question/contact_form.pug
+	+e.contact-container
+		+b.holder-form
+			+b.custom-form-wrapper
+				+b.FORM.form-contact-us
+					+e.input-wrapper
+						+b.H2.header
+							+e.title.underscore
+								| Contact us
+						+e.left
+							.input-field
+								i.material-icons.prefix email
+								input#icon_telephone.validate(type='tel')
+								label(for='icon_telephone') Email
+							.input-field
+								i.material-icons.prefix account_box
+								input#icon_telephone.validate(type='tel')
+								label(for='icon_telephone') Name
+						+e.right
+							.input-field
+								i.material-icons.prefix mode_edit
+								textarea#icon_prefix2.materialize-textarea
+								label(for='icon_prefix2') Message
+					+e.bottom-btn
+						button.btn.waves-effect.waves-light.blue(type='submit', name='action')
+							| Submit
+							i.material-icons.right send
+					+b.map#map
+		
+

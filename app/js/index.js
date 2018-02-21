@@ -41,88 +41,37 @@ function initMap() {
         center: { lat: 49.85, lng: 24.0166666667 },
         scrollwheel: false,
         zoom: 18,
-        scaleControl: true,
+        scaleControl: false,
+        zoomControl: false,
+        streetViewControl: false,
         styles: [{
-            "featureType": "administrative",
-            "elementType": "all",
+            "featureType": "all",
             "stylers": [{
-                "saturation": "-100"
+                "saturation": 0
+            }, {
+                "hue": "#e7ecf0"
             }]
         }, {
-            "featureType": "administrative.province",
-            "elementType": "all",
+            "featureType": "road",
+            "stylers": [{
+                "saturation": -70
+            }]
+        }, {
+            "featureType": "transit",
             "stylers": [{
                 "visibility": "off"
             }]
         }, {
-            "featureType": "landscape",
-            "elementType": "all",
-            "stylers": [{
-                "saturation": -100
-            }, {
-                "lightness": 65
-            }, {
-                "visibility": "on"
-            }]
-        }, {
             "featureType": "poi",
-            "elementType": "all",
             "stylers": [{
-                "saturation": -100
-            }, {
-                "lightness": "50"
-            }, {
-                "visibility": "simplified"
-            }]
-        }, {
-            "featureType": "road",
-            "elementType": "all",
-            "stylers": [{
-                "saturation": "-100"
-            }]
-        }, {
-            "featureType": "road.highway",
-            "elementType": "all",
-            "stylers": [{
-                "visibility": "simplified"
-            }]
-        }, {
-            "featureType": "road.arterial",
-            "elementType": "all",
-            "stylers": [{
-                "lightness": "30"
-            }]
-        }, {
-            "featureType": "road.local",
-            "elementType": "all",
-            "stylers": [{
-                "lightness": "40"
-            }]
-        }, {
-            "featureType": "transit",
-            "elementType": "all",
-            "stylers": [{
-                "saturation": -100
-            }, {
-                "visibility": "simplified"
+                "visibility": "off"
             }]
         }, {
             "featureType": "water",
-            "elementType": "geometry",
             "stylers": [{
-                "hue": "#ffff00"
+                "visibility": "simplified"
             }, {
-                "lightness": -25
-            }, {
-                "saturation": -97
-            }]
-        }, {
-            "featureType": "water",
-            "elementType": "labels",
-            "stylers": [{
-                "lightness": -25
-            }, {
-                "saturation": -100
+                "saturation": -60
             }]
         }]
     };
@@ -130,12 +79,20 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), option);
     // icon: {url: './../img/markerSvg.svg'},
 
-    var marker = new google.maps.Marker({
-        map: map,
-        position: option.center
-    });
+    // var marker = new google.maps.Marker({
+    //     map: map,
+    //     position: option.center
+    // });
+
 }
 "use strict";
+
+$(function () {
+	var input = $("#file");
+	input.on('change', function (e) {
+		console.log(this.files);
+	});
+});
 "use strict";
 
 var Navigation = function () {
